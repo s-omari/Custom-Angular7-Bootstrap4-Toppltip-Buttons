@@ -1,0 +1,27 @@
+<body>
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" routerLink="./">Tooltip Buttons</a>
+    <div style="flex:1;"></div>
+    <ul class="navbar-nav mr-auto d-flex flex-row">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="demo-buttons">demo</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="d-flex flex-column h-100">
+    <!-- Begin page content -->
+    <main role="main" class="flex-shrink-0">
+      <div class="container">
+        <h1 class="mt-5">Tooltip Buttons</h1>
+        <router-outlet></router-outlet>
+      </div>
+    </main>
+
+    <footer class="footer mt-auto py-3">
+      <div class="container">
+        <span class="text-muted">Custom tooltip buttons built with Angular 7 , Bootstrap 4.</span>
+      </div>
+    </footer>
+  </div>
+

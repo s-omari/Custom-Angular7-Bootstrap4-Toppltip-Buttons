@@ -1,0 +1,13 @@
+<div class="d-flex flex-column align-items-center" *ngIf="button">
+    <app-tooltip 
+   class="tooltip-spacer" [ngClass]="{'order-1 , mb-2': !tooltipBottomPosition, 'order-3 , mt-2': tooltipBottomPosition}"
+      [tooltipId]="tooltipId" [tooltipText]="button.tooltipText">
+    </app-tooltip>
+
+    <button type="button" (click)="showTooltip($event)" id="btn{{button.id}}" class="order-2 btn btn-light btn-lg btn-block" >
+      {{button.label}}
+    </button>
+
+
+    <div class="tooltip-spacer" [ngClass]="{'order-1 , mb-2': tooltipBottomPosition, 'order-3 , mt-2': !tooltipBottomPosition}"></div>
+</div>
