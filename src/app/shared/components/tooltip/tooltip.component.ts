@@ -8,7 +8,7 @@ import {Input, Component, ElementRef, HostListener } from '@angular/core';
 export class TooltipComponent   {
   @Input() tooltipId: string;
   @Input() tooltipText: string;
-  private isActive: boolean;
+  isActive: boolean;
   constructor(public el: ElementRef) { }
 
   show() {
